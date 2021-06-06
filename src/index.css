@@ -1,13 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+}
+input,
+select {
+    font-family: 'Lato', sans-serif;
+    border: 0px none;
+    border-radius: 5px;
+    display: flex;
+    height: 40px;
+    flex: 1;
+    font-weight: 400;
+    padding-left: 20px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+button {
+    font-family: 'Lato', sans-serif;
+}
+
+input.find {
+    background-color: #e37267;
+    max-width: 400px;
+    color: #fff;
+}
+
+input.find::placeholder {
+    color: #fff;
+    font-weight: 300;
+    padding-left: 10px;
+}
+
+input:focus {
+    outline-width: 0;
+}
+
+input.forminput {
+    background-color: #ededed;
+}
+input.forminput::placeholder {
+    padding-left: 10px;
+}
+
+select {
+    padding-left: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #333333;
+    text-align: center;
+}
+.inputWrapper {
+    display: flex;
+    flex: 1;
+    padding: 10px;
+}
+
+.mainWrapper {
+    display: flex;
+    min-height: 100vh;
+    background-color: #fff;
+    flex-direction: column;
+}
+
+.contentWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1170px;
+    flex: 1;
+    flex-direction: column;
+}
+.react-datepicker-wrapper,
+.react-datepicker__input-container,
+.react-datepicker-wrapper input,
+.row,
+.selectWrapper {
+    flex-direction: row;
+    display: flex;
+    flex: 1;
+}
+
+.column {
+    flex-direction: column;
+    display: flex;
+    flex: 1;
+}
+
+.justifyCenter {
+    justify-content: center;
+}
+
+.margin10 {
+    margin: 10px;
+}
+
+.margin20 {
+    margin: 20px;
+}
+
+.mainHeader {
+    display: flex;
+    background-color: #db4c3f;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+}
+
+.mainHeader img {
+    width: 30px;
+    margin-left: -40px;
+}
+
+.changeScreen {
+    display: flex;
+    flex: 0.7;
+    justify-self: center;
+    border: 0px none;
+    background-color: #ededed;
+    font-size: 18px;
+    color: #333333;
+    text-align: center;
+    padding: 10px;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.formWrapper,
+.tasklistWrapper {
+    display: flex;
+    flex: 0.7;
+    flex-direction: column;
+}
+.listitem {
+    display: flex;
+    flex: 1;
+    border-bottom: 1px solid #CCC;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: space-between;
+}
+.listitem.InComplete {
+    border-left: 20px solid #e37267;
+}
+.listitem.Complete {
+    border-left: 20px solid #01ca01;
+}
+.listitem.Wait {
+    border-left: 20px solid #42bcec;
+}
+.listitem.Rejected {
+    border-left: 20px solid #b10a0a;
+}
+
+.savebutton {
+    display: flex;
+    flex: 0.5;
+    margin: 10px;
+    border: 0px none;
+    background-color: #e37267;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.closebutton {
+    background-color: #42bcec;
+}
+
+@media screen and (max-width: 768px) {
+    .formWrapper, .tasklistWrapper {
+        flex: 1;
+    }
 }
