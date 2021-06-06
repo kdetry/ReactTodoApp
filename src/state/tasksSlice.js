@@ -34,7 +34,9 @@ export const tasksSlice = createSlice({
             if (filtertext.length === 0) {
                 state.filteredtasks = state.tasks;
             } else {
-                state.filteredtasks = state.tasks.filter((item) => item.task.toLowerCase().indexOf(filtertext) > -1);
+                state.filteredtasks = state.tasks.filter(
+                    (item) => item.task.toLowerCase().indexOf(filtertext.toLowerCase()) > -1,
+                );
             }
         },
     },
