@@ -36,7 +36,7 @@ input:focus {
     outline-width: 0;
 }
 
-input.forminput {
+input.forminput, select {
     background-color: #ededed;
 }
 input.forminput::placeholder {

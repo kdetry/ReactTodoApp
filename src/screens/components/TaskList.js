@@ -15,6 +15,7 @@ export const TaskList = function () {
                 <span>Loading...</span>
             </div>
         );
+    
     return (
         <ul className="column tasklistWrapper">
             {taskState.filteredtasks.map((item, index) => {

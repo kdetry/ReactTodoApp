@@ -1,4 +1,4 @@
-const baseUrl = 'http://127.0.0.1:8000/api';
+const baseUrl = 'https://arcane-everglades-72731.herokuapp.com/api';
 
 export const apiAddTask = () => `${baseUrl}/todo/create/`;
 export const apiGetTasks = () => `${baseUrl}/todos/`;
